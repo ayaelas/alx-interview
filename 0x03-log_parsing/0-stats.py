@@ -1,10 +1,9 @@
-
 #!/usr/bin/python3
 
 import sys
 
 
-def print_msg(dict_sc, total_file_size):
+def print_statis(dict_sc, total_file_size):
     """
     Method to print
     Args:
@@ -48,8 +47,8 @@ try:
                     dict_sc[code] += 1
 
             if (counter == 10):
-                print_msg(dict_sc, total_file_size)
+                print_statis(dict_sc, total_file_size)
                 counter = 0
 
 finally:
-    print_msg(dict_sc, total_file_size)
+    print_statis(dict_sc, total_file_size)
